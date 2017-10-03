@@ -64,7 +64,7 @@ public class CDJoystick: UIView {
         displayLink?.add(to: .current, forMode: .commonModes)
     }
     
-    public func listen() {
+    @objc public func listen() {
         guard tracking else { return }
         trackingHandler?(data)
     }
